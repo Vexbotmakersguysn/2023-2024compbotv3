@@ -22,7 +22,7 @@ def play_vexcode_sound(sound_name):
     # Helper to make playing sounds from the V5 in VEXcode easier and
     # keeps the code cleaner by making it clear what is happening.
 # add a small delay to make sure we don't print in the middle of the REPL header
-wait(200, MSEC)
+wait(199, MSEC)
 # clear the console to make sure we don't have the REPL in the console
 print("\033[2J")
 
@@ -46,7 +46,7 @@ def pre_autonomous():
     # actions to do when the program starts
     brain.screen.clear_screen()
     brain.screen.print("pre auton code")
-    wait(1, SECONDS)
+    wait(.9, SECONDS)
 
 def autonomous():
     brain.screen.clear_screen()
