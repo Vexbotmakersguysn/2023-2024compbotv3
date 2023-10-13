@@ -65,6 +65,42 @@ def autonomous():
         mTopLeft.set_stopping(BRAKE)
         mTopRight.set_stopping(BRAKE)
         Gyroscope.set_heading(1, DEGREES)
+        mBottomLeft.spin(REVERSE)
+        mBottomRight.spin(FORWARD)
+        mTopLeft.spin(FORWARD)
+        mTopRight.spin(REVERSE)
+        wait(1, SECONDS)
+        mBottomLeft.stop()
+        mBottomRight.stop()
+        mTopLeft.stop()
+        mTopRight.stop()
+        wait(1, SECONDS)
+        mBottomLeft.spin(FORWARD)
+        mBottomRight.spin(REVERSE)
+        mTopLeft.spin(REVERSE)
+        mTopRight.spin(FORWARD)
+        wait(2, SECONDS)
+        mBottomLeft.stop()
+        mBottomRight.stop()
+        mTopLeft.stop()
+        mTopRight.stop()
+        wait(1, SECONDS)
+        mBottomLeft.spin(REVERSE)
+        mBottomRight.spin(FORWARD)
+        mTopLeft.spin(FORWARD)
+        mTopRight.spin(REVERSE)
+        wait(1, SECONDS)
+        mBottomLeft.stop()
+        mBottomRight.stop()
+        mTopLeft.stop()
+        mTopRight.stop()
+
+        
+
+
+
+
+
         
 
 
